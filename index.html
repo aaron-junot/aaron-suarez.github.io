@@ -3,11 +3,101 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="style.css">
-    <title>Hello World</title>
+    <title>Aaron Suarez | Home</title>
+    <style>
+      body {
+        background: #CCEDEE;
+        color: rgb(45, 45, 45);
+        padding: 10px;
+        font-family: arial;
+      }
+      header {
+        font-size: 1.5em;
+        font-weight: bold;
+      }
+      #all-contents {
+        max-width: 800px;
+        margin: auto;
+      }
+  
+      /* navigation menu */
+      nav {
+        background: #1F8FFF;
+        margin: 0 auto;
+        margin-bottom: 20px;
+        display: flex;
+        padding: 10px;
+        border-radius: 10px;
+      }
+      nav header {
+        display: flex;
+        align-items: center;
+        color: rgb(255, 255, 255);
+        flex: 1;
+      }
+      nav ul {
+        list-style-image: none;
+      }
+      nav li {
+        display: inline-block;
+        padding: 0 10px;
+      }
+      nav a {
+        text-decoration: none;
+        color: #fff;
+      }
+
+      /* main container area beneath menu */
+      main {
+        background: #5072FF;
+        display: flex;
+        border-radius: 10px;
+      }
+      .sidebar {
+        margin-right: 25px;
+        padding: 10px;
+      }
+      .sidebar img {
+        width: 200px;
+      }
+      .content {
+        flex: 1;
+        padding: 15px;
+      }
+      .interests header {
+        font-size: 1.25em;
+      }
+    </style>
   </head>
   <body>
-    <h1>Hello, World!</h1> 
-    <p>My content will be up soon. And it will rock!</p>
+    <div id="all-contents"> 
+      <nav>
+        <header>Aaron's Website</header>
+        <ul>
+          <li><a href="index.html">Home</a></li>
+          <li><a href="portfolio.html">Portfolio</a></li>
+        </ul>
+      </nav>
+
+      <main>
+        <div class="sidebar">
+          <img src="https://media.licdn.com/mpr/mpr/shrinknp_400_400/AAEAAQAAAAAAAAi_AAAAJDE0NGMxZTUzLWY0MjQtNDg5MC1hNjE1LWI5NTM2OWU0YmNmYw.jpg">
+        </div>
+
+        <div class="content">
+          <header>Aaron Suarez</header>
+          <p>Student at <a href="https://www.umuc.edu/">UMUC</a></p>
+          <section class="Interests">
+            <header>Interests</header>
+            <ul>
+              <li>Coding</li>
+              <li>Reading</li>
+              <li>Rock Climbing</li>
+            </ul>
+          </section>
+        </div>
+      </main>
+    </div>
   </body>
 </html>
 
