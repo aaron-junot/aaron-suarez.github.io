@@ -3,10 +3,11 @@
     <head>
         <meta charset="utf-8">
         <title>Aaron Suarez | Portfolio</title>
-        <link rel="stylesheet" href="assets/style.css">
+        <link rel="stylesheet" href="assets/style.css" type="text/css" />
     </head>
 
     <body>
+      <div id="all-contents">
          <nav>
             <header>Aaron Suarez</header>
             <ul>
@@ -14,6 +15,7 @@
                 </li>
                 <li><a href="portfolio.html">Portfolio</a>
                 </li>
+                <li><a href="studies.html">Studies</a></li>
             </ul>
         </nav>
         
@@ -26,5 +28,6 @@
         </main>
         <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.2.min.js"></script>
         <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
+      </div>
     </body>
 </html>
