@@ -26,7 +26,7 @@
                 </ul>
             </div>
         </main>
-        <script src="http://ajax.microsoft.com/ajax/jquery/jquery-1.6.2.min.js"></script>
+        <script src="https://ajax.microsoft.com/ajax/jquery/jquery-1.6.2.min.js"></script>
         <script id="portfolioScript">$(document).ready(function() {$.getJSON('projects/projects.json').then(function(data) { data.projects.forEach(function(project){ $('#portfolio').append('<li><a href="projects/' + project.name + '/">' + project.title + ' : ' + project.description + '</a></li>'); }); }); });</script>
       </div>
     </body>
