@@ -399,20 +399,19 @@ _.some = function(coll, func) {
 *   _.reduce([1,2,3], function(prev, curr){ return prev + curr}) -> 6
 */
 
-_.reduce = function(arr, func, seed) {
-    var prev;
-    if (seed === undefined) {
-        for(var i = 0; i < arr.length; i++) {
-            i === 0 ? prev = arr[0] : prev = func(prev, arr[i], i);
-        }
-    } else{
-        for(var i = 0; i < arr.length; i++) {
-            if (i === 0)  prev = seed;
-            prev = func(prev, arr[i], i);
-        }
+_.reduce = function(arr, combine, seed) {
+    let 
+        combined = seed,
+        i = 0;
+    if (combined === undefined) {
+        combined = arr[0];
+        i++;
     }
-    return prev;
-}
+    for( ; i < arr.length; i++) {
+        combined = combine(combined, arr[i], i, arr);
+    }
+    return combined;
+};
 
 /** _.extend()
 * Arguments:
