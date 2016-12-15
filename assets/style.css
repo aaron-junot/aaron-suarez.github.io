@@ -47,99 +47,114 @@ table {
 }
 */
 
+/* billypedia styles */
+.recordings {
+  color: black;
+  font-weight: bold;
+}
+
+#image-billy {
+  border: 2px solid;
+  border-color: rgba(255, 255, 255, 1);
+  cursor: pointer; cursor: hand;
+}
+
+
+
 body {
         background: #c1cfda;
         color: rgb(45, 45, 45);
         padding: 10px;
         font-family: arial;
       }
-      header {
-        font-size: 1.5em;
-        font-weight: bold;
-      }
-      #all-contents {
-        max-width: 800px;
-        margin: auto;
-      }
+header {
+  font-size: 1.5em;
+  font-weight: bold;
+}
+#all-contents {
+  max-width: 800px;
+  margin: auto;
+}
+
+/* navigation menu */
+nav {
+  background: #1F8FFF;
+  margin: 0 auto;
+  margin-bottom: 20px;
+  display: flex;
+  padding: 10px;
+  border-radius: 10px;
+}
+nav header {
+  display: flex;
+  align-items: center;
+  color: rgb(255, 255, 255);
+  flex: 1;
+}
+nav ul {
+  list-style-image: none;
+}
+nav li {
+  display: inline-block;
+  padding: 0 10px;
+}
+nav a {
+  text-decoration: none;
+  color: #fff;
+}
+  /* main container area beneath menu */
+main {
+  background: #1F8FFF;
+  display: flex;
+  border-radius: 10px;
+  color: #fff;
+}
   
-      /* navigation menu */
-      nav {
-        background: #1F8FFF;
-        margin: 0 auto;
-        margin-bottom: 20px;
-        display: flex;
-        padding: 10px;
-        border-radius: 10px;
-      }
-      nav header {
-        display: flex;
-        align-items: center;
-        color: rgb(255, 255, 255);
-        flex: 1;
-      }
-      nav ul {
-        list-style-image: none;
-      }
-      nav li {
-        display: inline-block;
-        padding: 0 10px;
-      }
-      nav a {
-        text-decoration: none;
-        color: #fff;
-      }
+main a:link {
+  color: #666370;
+}
+  
+main a:visited {
+  color: #59f8e8;
+}
+.sidebar {
+  margin-right: 25px;
+  padding: 10px;
+}
+.sidebar img {
+  width: 200px;
+  color:darkblue;
+  border-style: solid;
+  border-width: 4px;
+  border-radius: 3px;
+}
+.content {
+  flex: 1;
+  padding: 15px;
+}
+.interests header {
+  font-size: 1.25em;
+}
+/* portfolio styles */
+  #portfolio {
+    list-style-type: none;
+    padding-left: 0;
+  }
+  #portfolio li {
+    background: #fff;
+    padding: 10px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+  }
+  #portfolio li:hover {
+    background: #eee;
+  } 
+  #portfolio a {
+    text-decoration: none;
+    color: #454545;
+  }
+     
+     #top-rated-image {
+  width: 30%;
+}   
 
-      /* main container area beneath menu */
-      main {
-        background: #1F8FFF;
-        display: flex;
-        border-radius: 10px;
-        color: #fff;
-      }
-      
-      main a:link {
-        color: #666370;
-      }
-      
-      main a:visited {
-        color: #59f8e8;
-      }
-      .sidebar {
-        margin-right: 25px;
-        padding: 10px;
-      }
-      .sidebar img {
-        width: 200px;
-        color:darkblue;
-        border-style: solid;
-        border-width: 4px;
-        border-radius: 3px;
-      }
-      .content {
-        flex: 1;
-        padding: 15px;
-      }
-      .interests header {
-        font-size: 1.25em;
-      }
-      /* portfolio styles */
-            #portfolio {
-                list-style-type: none;
-                padding-left: 0;
-            }
-
-            #portfolio li {
-                background: #fff;
-                padding: 10px;
-                border-radius: 10px;
-                margin-bottom: 10px;
-            }
-
-            #portfolio li:hover {
-                background: #eee;
-            } 
-
-            #portfolio a {
-                text-decoration: none;
-                color: #454545;
-            }
