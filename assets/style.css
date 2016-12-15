@@ -154,7 +154,7 @@ main a:visited {
     color: #454545;
   }
      
-#top-rated-image #recording-image{
+#top-rated-image, #recording-image{
   width: 30%;
 }   
 
